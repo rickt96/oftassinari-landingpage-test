@@ -33,7 +33,7 @@ h5 {
 	line-height: 20px;
 }
 p {
-	font-size: 15px;
+	font-size: 17px;
 }
 p.intro {
 	margin: 12px 0 0;
@@ -45,7 +45,7 @@ a {
 }
 a:hover, a:focus {
 	text-decoration: none;
-	color: #608dfd;
+	color: #ff5e00;
 }
 ul, ol {
 	list-style: none;
@@ -83,8 +83,9 @@ hr {
 }
 
 #menu img.navbar-brand {
-	height: 100px;
-	width: 300px;
+	height: 55px;
+	width: 155px;
+	padding: 0px;
 }
 #menu.navbar-default .navbar-nav > li > a {
 	font-family: 'Lato', sans-serif;
@@ -96,6 +97,8 @@ hr {
 	border-radius: 0;
 	margin: 9px 20px 0 20px;
 }
+
+/* sottolineatura voci menu al passaggio */
 #menu.navbar-default .navbar-nav > li > a:after {
 	display: block;
 	position: absolute;
@@ -103,7 +106,7 @@ hr {
 	bottom: -1px;
 	width: 0;
 	height: 2px;
-	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+	background: #40aef8 !important;
 	content: "";
 	transition: width 0.2s;
 }
@@ -113,6 +116,8 @@ hr {
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	background-color: transparent;
 }
+
+/* applicazione linea al click */
 .navbar-default .navbar-nav > .active > a:after, .navbar-default .navbar-nav > .active > a:hover:after, .navbar-default .navbar-nav > .active > a:focus:after {
 	display: block !important;
 	position: absolute !important;
@@ -120,7 +125,7 @@ hr {
 	bottom: -1px !important;
 	width: 100% !important;
 	height: 2px !important;
-	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%) !important;
+	background: linear-gradient(to right, #b4b4b4 0%, #3f3f3f 100%) !important;
 	content: "" !important;
 	transition: width 0.2s !important;
 }
@@ -129,7 +134,7 @@ hr {
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
 	background-color: #fff;
-	border-color: #608dfd;
+	/*border-color: #ff2600;*/
 }
 .navbar-default .navbar-toggle:hover>.icon-bar {
 	background-color: #608dfd;
@@ -146,7 +151,7 @@ hr {
 .section-title h2::after {
 	position: absolute;
 	content: "";
-	background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+	background: #5ca9fb;
 	height: 4px;
 	width: 60px;
 	bottom: 0;
@@ -157,24 +162,26 @@ hr {
 	font-size: 18px;
 }
 .btn-custom {
+	/*font-style: italic;*/
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
-	color: #fff;
-	background-color: #5ca9fb;
-	background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+	color: black;
+	background-color: whitesmoke;
 	padding: 14px 34px;
 	letter-spacing: 1px;
 	margin: 0;
-	font-size: 15px;
+	font-size: 17px;
 	font-weight: 500;
 	border-radius: 25px;
 	transition: all 0.5s linear;
 	border: 0;
+	/*opacity: 0.7;*/
 }
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
 	color: #fff;
 	background-image: none;
-	background-color: #6372ff;
+	color: #608dfd;
+	/*background-color: #6372ff;*/
 }
 .btn:active, .btn.active {
 	background-image: none;
@@ -216,11 +223,12 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	color: #5ca9fb;
 }
 .intro p {
-	text-shadow:1px 1px grey;
+	text-shadow: 1px 1px #505050;
 	color: #fff;
-	font-size: 22px;
-	font-weight: 300;
-	line-height: 30px;
+	font-size: 25px;
+	font-weight: normal;
+	font-style: oblique;
+	line-height: 40px;
 	margin: 0 auto;
 	margin-bottom: 60px;
 }
@@ -243,7 +251,7 @@ header .intro-text {
 	height: 100px;
 	padding: 30px 0;
 	border-radius: 50%;
-	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+	background: #608dfd;
 	box-shadow: 10px 10px 10px rgba(0,0,0,.05);
 }
 /* About Section */
@@ -262,7 +270,7 @@ header .intro-text {
 #about h2::after {
 	position: absolute;
 	content: "";
-	background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+	background: #608dfd;
 	height: 4px;
 	width: 60px;
 	bottom: 0;
@@ -296,14 +304,14 @@ header .intro-text {
 /* Services Section */
 #services {
 	padding: 100px 0;
-	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-	color: #fff;
+	background: #868686;
+	color: white;
 }
 #services .service-desc {
 	margin: 10px 10px 20px;
 }
 #services h2 {
-	color: #fff;
+	color: rgb(255, 255, 255);
 }
 #services .section-title h2::after {
 	position: absolute;
@@ -320,7 +328,7 @@ header .intro-text {
 	width: 120px;
 	height: 120px;
 	padding: 40px 0;
-	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+	background: #608dfd;
 	border-radius: 50%;
 	color: #fff;
 	box-shadow: 10px 10px 10px rgba(0,0,0,.05);
@@ -329,13 +337,22 @@ header .intro-text {
 	font-weight: 500;
 	padding: 5px 0;
 	color: #fff;
+	text-shadow: 1px 2px grey;
+	
 }
 #services p {
-	color: rgba(255,255,255,.75);
+	color: white;
+	text-shadow: 1px 2px grey;
 }
 #services .service-desc {
 	margin-bottom: 40px;
 }
+#services .service-img {
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+}
+
 /* Portfolio Section */
 #portfolio {
 	padding: 100px 0;
@@ -354,7 +371,7 @@ header .intro-text {
 	text-align: center;
 	margin: 0 auto;
 	color: #fff;
-	background: linear-gradient(to right, rgba(99,114,255,0.8) 0%, rgba(92,169,251,0.8) 100%);
+	background: #608dfd;
 	padding: 30% 0 0 0;
 	height: 100%;
 	width: 100%;
@@ -441,8 +458,8 @@ header .intro-text {
 /* Contact Section */
 #contact {
 	padding: 100px 0 60px 0;
-	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-	color: rgba(255,255,255,.75);
+	background: #868686;
+	color: white;
 }
 #contact .section-title {
 	margin-bottom: 40px;
@@ -481,11 +498,11 @@ header .intro-text {
 }
 #contact .btn-custom {
 	margin: 30px 0;
-	background: transparent;
+	/*background: transparent;*/
 	border: 2px solid #fff;
 }
 #contact .btn-custom:hover {
-	color: #1f386e;
+	color: #608dfd;
 	background: #fff;
 }
 label {
