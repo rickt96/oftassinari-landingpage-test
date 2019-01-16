@@ -64,6 +64,13 @@ hr {
 	margin-bottom: 20px;
 	border: 0;
 }
+
+/* Common */
+.shadow{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 /* Navigation */
 #menu {
 	padding: 15px;
@@ -233,7 +240,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin-bottom: 60px;
 }
 header .intro-text {
-	padding-top: 350px;
+	padding-top: 250px;
 	padding-bottom: 200px;
 	text-align: center;
 }
@@ -304,7 +311,7 @@ header .intro-text {
 /* Services Section */
 #services {
 	padding: 100px 0;
-	background: #868686;
+	background:#a5b1b8;/* #c5c0b6; #b7b7b7; #868686;*/
 	color: white;
 }
 #services .service-desc {
@@ -348,10 +355,11 @@ header .intro-text {
 	margin-bottom: 40px;
 }
 #services .service-img {
-	width: 140px;
-	height: 140px;
+	width: 160px;
+	height: 160px;
 	border-radius: 50%;
 }
+
 
 /* Portfolio Section */
 #portfolio {
@@ -458,7 +466,7 @@ header .intro-text {
 /* Contact Section */
 #contact {
 	padding: 100px 0 60px 0;
-	background: #868686;
+	background: #8ea5b0; /*#4c5f69; #c5c0b6; #b7b7b7; #868686;*/
 	color: white;
 }
 #contact .section-title {

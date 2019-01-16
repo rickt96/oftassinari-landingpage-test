@@ -6,6 +6,7 @@
 <title>Onoranze Funebri Tassinari</title>
 <meta name="description" content="">
 <meta name="author" content="Riccardo Tassinari">
+<meta name="dc.language" content="ita" scheme="RFC1766">
 
 <!-- Favicons -->
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -42,7 +43,7 @@
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <img class="navbar-brand page-scroll" src="img/logo.png"><img/>
+      <img class="navbar-brand page-scroll" src="img/logo.png">
     </div>   
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -67,7 +68,7 @@
           <div class="col-md-8 col-md-offset-2 intro-text">
             <!--<h1>O.F. Tassinari<span></span></h1>-->
             <p>Metteremo a vostra disposizione professionalità, disponibilità e serietà per accompagnarvi in uno dei momenti più delicati della vostra vita.</p>
-            <a href="tel:55555" class="btn btn-custom btn-lg page-scroll">Contattaci ora</a>
+            <a href="tel:054771794" class="btn btn-custom btn-lg page-scroll">Contattaci ora</a>
           </div>
         </div>
       </div>
@@ -105,21 +106,21 @@
     <div class="row"> <!-- first row-->
       
       <div class="col-md-4">
-          <img src="img/services/01.jpg" alt="..." class="service-img">
+          <img src="img/services/01.jpg" alt="..." class="service-img shadow">
           <div class="service-desc">
             <h3>Disbrigo pratiche</h3>
           </div>
         </div>       
         
         <div class="col-md-4">
-          <img src="img/services/02.jpg" alt="..." class="service-img">
+          <img src="img/services/02.jpg" alt="..." class="service-img shadow">
           <div class="service-desc">
             <h3>Composizioni floreali</h3>
           </div>
         </div>       
         
         <div class="col-md-4">
-          <img src="img/services/03.jpg" alt="..." class="service-img">
+          <img src="img/services/03.jpg" alt="..." class="service-img shadow">
           <div class="service-desc">
             <h3>Consulenze psicologiche</h3>
           </div>
@@ -130,21 +131,21 @@
     <div class="row"> <!-- second row-->
 
       <div class="col-md-4">
-          <img src="img/services/04.jpg" alt="..." class="service-img">
+          <img src="img/services/04.jpg" alt="..." class="service-img shadow">
           <div class="service-desc">
             <h3>Recuperi e spostamenti</h3>
           </div>
         </div>     
         
         <div class="col-md-4">
-          <img src="img/services/05.jpg" alt="..." class="service-img">
+          <img src="img/services/05.jpg" alt="..." class="service-img shadow">
           <div class="service-desc">
             <h3>Stampe ed affissioni</h3>
           </div>
         </div>   
         
         <div class="col-md-4">
-          <img src="img/services/06.jpg" alt="..." class="service-img">
+          <img src="img/services/06.jpg" alt="..." class="service-img shadow">
           <div class="service-desc">
             <h3>Vestizioni</h3>
           </div>
@@ -155,21 +156,21 @@
     <div class="row"> <!-- third row-->
       
       <div class="col-md-4">
-        <img src="img/services/07.jpg" alt="..." class="service-img">
+        <img src="img/services/07.jpg" alt="..." class="service-img shadow">
         <div class="service-desc">
           <h3>Cremazioni</h3>
         </div>
       </div>
       
       <div class="col-md-4">
-        <img src="img/services/08.jpg" alt="..." class="service-img">
+        <img src="img/services/08.jpg" alt="..." class="service-img shadow">
         <div class="service-desc">
           <h3>Allestimento camere ardenti</h3>
         </div>
       </div>  
       
       <div class="col-md-4">
-        <img src="img/services/09.jpg" alt="..." class="service-img">
+        <img src="img/services/09.jpg" alt="..." class="service-img shadow">
         <div class="service-desc">
           <h3>Necrologi</h3>
         </div>
@@ -225,59 +226,63 @@
 
 <!-- Contact Section -->
 <div id="contact">
-  <div class="container">
-    
-    <div class="col-md-8">
-      <div class="row">
-        <div class="section-title">
-          <h2>Contattaci</h2>
-          <p>Compila il modulo qui sotto per inviarci una mail.</p>
-        </div>
-        <form name="sentMessage" id="contactForm" novalidate>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
+
+    <div class="container">
+
+        <div class="col-md-8">
+            <div class="row">
+            <div class="section-title">
+              <h2>Contattaci</h2>
+              <p>Compila il modulo qui sotto per inviarci una mail.</p>
+            </div>
+            <form name="sentMessage" id="contactForm" novalidate>
+              <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
                 <input type="text" id="name" class="form-control" placeholder="Name" required="required">
                 <p class="help-block text-danger"></p>
+                </div>
               </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
+              <div class="col-md-6">
+                <div class="form-group">
                 <input type="email" id="email" class="form-control" placeholder="Email" required="required">
                 <p class="help-block text-danger"></p>
+                </div>
               </div>
+              </div>
+              <div class="form-group">
+              <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+              <p class="help-block text-danger"></p>
+              </div>
+              <div id="success"></div>
+              <button type="submit" class="btn btn-custom btn-lg page-scroll">Invia un messaggio</button>
+            </form>
             </div>
           </div>
-          <div class="form-group">
-            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-            <p class="help-block text-danger"></p>
+          
+          <div class="col-md-3 col-md-offset-1 contact-info">
+            <div class="contact-item">
+            <h3>Contatti</h3>
+            <p><span><i class="fa fa-map-marker"></i> Indirizzi</span>
+              Via Cesenatico 34<br>
+              Via Campone Sala 345
+            </p>
+            </div>
+            <div class="contact-item">
+            <p><span><i class="fa fa-phone"></i> Telefoni</span>
+              0547 82543<br>
+              0547 71794
+            </p>
+            </div>
+            <div class="contact-item">
+            <p><span><i class="fa fa-envelope-o"></i> Email</span>
+            onoranzetassinari@gmail.com</p>
+            </div>
           </div>
-          <div id="success"></div>
-          <button type="submit" class="btn btn-custom btn-lg page-scroll">Invia un messaggio</button>
-        </form>
-      </div>
+          
+
     </div>
 
-    <div class="col-md-3 col-md-offset-1 contact-info">
-      <div class="contact-item">
-        <h3>Contatti</h3>
-        <p><span><i class="fa fa-map-marker"></i> Indirizzo</span>
-          Via Cesenatico 345<br>
-          Via Campone Sala 352/a
-        </p>
-      </div>
-      <div class="contact-item">
-        <p><span><i class="fa fa-phone"></i> Telefoni</span>
-          0547 11111<br>
-          0547 22222
-        </p>
-      </div>
-      <div class="contact-item">
-        <p><span><i class="fa fa-envelope-o"></i> Email</span>
-        onoranzetassinari@gmail.com</p>
-      </div>
-    </div>
-  </div>
 </div>
 
 
