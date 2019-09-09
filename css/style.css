@@ -463,6 +463,7 @@ header .intro-text {
 	padding: 10px 0 0 0;
 	color: #888;
 }
+
 /* Contact Section */
 #contact {
 	padding: 100px 0 60px 0;
@@ -481,6 +482,12 @@ header .intro-text {
 	margin-bottom: 15px;
 	padding-bottom: 15px;
 }
+#contact h3 {
+	color: #fff;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	
+}
 #contact .section-title h2::after {
 	position: absolute;
 	content: "";
@@ -488,15 +495,10 @@ header .intro-text {
 	height: 4px;
 	width: 60px;
 	bottom: 0;
-	left: 30px;
+	margin-left: -30px;
+	left: 50%;
 }
-#contact h3 {
-	color: #fff;
-	margin-top: 80px;
-	margin-bottom: 25px;
-	padding-bottom: 20px;
-	font-weight: 400;
-}
+
 #contact form {
 	padding-top: 20px;
 }
@@ -609,4 +611,15 @@ color: #777;
 #about img {
 	margin: 50px 0;
 }
+}
+
+
+
+/**/
+.box {
+	padding: 20px;
+}
+
+.address{
+	margin-top: 25px;
 }
