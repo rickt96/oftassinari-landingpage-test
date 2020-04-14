@@ -273,6 +273,7 @@ header .intro-text {
 	position: relative;
 	margin-bottom: 15px;
 	padding-bottom: 15px;
+	margin-top: 15px;
 }
 #about h2::after {
 	position: absolute;
@@ -608,9 +609,7 @@ color: #777;
 }
 
 @media (max-width: 768px) {
-#about img {
-	margin: 50px 0;
-}
+
 }
 
 
